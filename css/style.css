@@ -1,7 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	
+}
 
+body{
+    font-family:  "Poppins", sans-serif;
+    background: linear-gradient(100deg,#662D8C , #ED1E79);
+    min-height: 100vh;
+    color: #fff;
 }
 
 .navigation {
@@ -100,7 +108,7 @@
 
 .home-articles {
     padding: 18px;
-    background-color: #FCF8E8;
+    background-color: #f594f0;
     margin-top: 23px;
     position: relative;
 }
@@ -109,7 +117,7 @@
     position: absolute;
     width: 34px;
     height: 455px;
-    background-color: #F1E9E5;
+    background-color: #4d4b4a;
     right: 419px;
     top: 100px;
     width: 200px;
