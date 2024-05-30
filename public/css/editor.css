@@ -1,66 +1,100 @@
-@media screen and (max-width: 1200px) {
-    .navigation {
-        flex-direction: column;
-        margin-bottom: 23px;
+.banner{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    background: #e7e7e7;
+    background-size: cover;
+    background-position: center;
+}
 
-    }
+.banner-upload-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
 
-    .nav-left {
-        flex-direction: column;
-        text-align: center;
-    }
+.banner-upload-btn img{
+    width: 20px;
+}
 
-    .content-right {
-        display: none;
-    }
+.blog{
+    width: 70vw;
+    min-width: 400px;
+    height: 100px;
+    display: block;
+    margin: auto;
+    padding: 50px 0;
+}
 
-    .home-article {
-        flex-direction: column;
-    }
+textarea::-webkit-scrollbar{
+    width: 10px;
+}
 
-    .home-article-img {
-        text-align: center;
-    }
+textarea::-webkit-scrollbar-thumb{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-    .year-box {
-        top: 0;
-        left: 60vw;
-        font-size: 11px;
-        display: flex;
-    }
+.title,
+.article{
+    width: 100%;
+    min-height: 100px;
+    height: auto;
+    outline: none;
+    font-size: 50px;
+    font-weight: 600;
+    color: #2d2d2d;
+    resize: none;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
 
-    .year-box div {
-        padding: 3px;
-        margin: 0;
-    }
+.title::placeholder,
+.article::placeholder{
+    color: #2d2d2d;
+}
 
-    .home-article-img {
-        width: 70vw;
-    }
+.article{
+    height: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 100px;
+    white-space: pre-wrap;
+}
 
-    .form-input {
-        width: 50%;
-    }
+.blog-options{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    .form-box input,
-    textarea {
-        width: 66vw;
-    }
+.btn{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 
-    .more-post {
-        flex-direction: column;
-    }
-
-    .row {
-        flex-direction: column;
-    }
-
-    .social {
-        padding: 0;
-
-    }
-    .post-img
-    {
-        height: auto;
-    }
+.btn.grey{
+    background: #a5a5a5;
+    color: #fff;
+    margin-left: 20px;
+    font-size: 14px;
 }
