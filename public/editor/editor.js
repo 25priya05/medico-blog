@@ -1,4 +1,4 @@
-import { db } from './firebase.js';
+import { db } from '../firebase.js';
 import { doc, setDoc } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js"; // import necessary methods
 
 const blogTitleField = document.querySelector('.title');
@@ -19,6 +19,7 @@ uploadInput.addEventListener('change', () => {
 
 const uploadImage = (uploadFile, uploadType) => {
     const [file] = uploadFile.files;
+    
     if(file && file.type.includes("image")){
         const formdata = new FormData();
         formdata.append('image', file);

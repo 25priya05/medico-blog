@@ -9,11 +9,11 @@ app.use(express.static(initial_path));
 app.use(fileupload());
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(initial_path, "home.html"));
+    res.sendFile(path.join(initial_path, "index.html"));
 })
 
 app.get('/editor', (req, res) => {
-    res.sendFile(path.join(initial_path, "editor.html"));
+    res.sendFile(path.join(initial_path, "editor","index.html"));
 })
 
 // upload link
@@ -36,7 +36,7 @@ app.post('/upload', (req, res) => {
     })
 })
 app.get("/:blog", (req, res) => {
-    res.sendFile(path.join(initial_path, "blog.html"));
+    res.sendFile(path.join(initial_path,"blog" ,"index.html"));
 })
 app.use((req, res) => {
     res.json("404");
